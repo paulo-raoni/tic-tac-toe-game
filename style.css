@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+/*TIC TAC TOE TITLE  */
+.game-title {
+	text-align: center;
+	margin: 30px auto 5px auto;
+	font-family: 'Lobster', cursive;
+	font-size: 3em;
+	transition: 1s all;
+}
+
+/*START BUTTON */
+button.start {
+	background-color: darkcyan;
+	color: white;
+	display: block;
+	margin: 0 auto 30px auto;
+	border-radius: 30%;
+	outline: none;
+	box-shadow: 2px 2px 1px black;
+	font-weight: normal;
+	font-size: 1.4em;
+	height: 40px;
+	width: 100px;
+	text-shadow: .2px .1px .1px yellow, 
+							-.2px -.1px .1px lightblue, 
+							 .1px .2px .1px yellow, 
+							 -.1px -.2px .1px lightblue;
+	transition: .5s all;
+}
+
+/*REPORT PLAYER */
+h4.reportPlayer {
+	text-align: center;
+	font-size: 1.5em;
+	color: black;
+	margin: 10px auto 20px auto;
+}
+
+h6.warning {
+	text-align: center;
+	color: red;
+	margin: 0 auto 0 auto;
+	padding: 0;
+}
+
+/*TIC TAC TOE BOARD */
+.tic-tac-toe {
+	margin: 10px auto 10px auto;
+
+}
+
+/*ALL SQUARES  */
+td {
+	font-size: 2em;
+	height: 140px;
+	width: 140px;
+	background-color: white;
+	transition: all 1s;
+}
+
+button.square {
+	height: inherit;
+	width: inherit;
+	background-color: inherit;
+	border: 0;
+	text-decoration: none;
+	outline: none;
+}
+
+
+/*HORIZONTAL LINES */
+.horizontal {
+	border-top: 2px solid;
+	border-bottom: 2px solid;
+}
+/*VERTICAL LINES */
+.vertical {
+	border-right: 2px solid;
+	border-left: 2px solid;
+}
+
+.madeby {
+	display: table;
+	background-color: lightgray;
+	text-align: center;
+	font-weight: 600;
+	margin: 100px auto;
+	border-radius: 10%;
+	transition: 1s all;
+
+}
+
+.madeby span {
+	font-weight: 800;
+}
+
+a {
+	transition: .20s all;
+}
+
+a:hover {
+	font-size: 1.1em;
+	text-decoration: none;
+	color: inherit;
+}
+
+
+
+/*MEDIA QUERIES BELOW */
+@media (max-width: 500px) {
+	td {
+		height: 120px;
+		width: 120px;
+	}
+
+	.madeby {
+		font-size: .9em;
+	}
+
+}
+
+@media (max-width: 400px) {
+	td {
+		height: 100px;
+		width: 100px;
+	}
+
+	.madeby {
+		font-size: .8em;
+	}
+}
+
+@media (max-width: 350px) {
+
+	.game-title {
+		font-size: 2.5em;
+	}
+
+	td {
+		height: 80px;
+		width: 80px;
+	}
+
+	.madeby {
+		font-size: .7em;
+	}
+
+}
+
+@media (max-width: 280px) {
+
+	.game-title {
+		font-size: 1.8em;
+	}
+
+	td {
+		height: 60px;
+		width: 60px;
+	}
+
+	.madeby {
+		font-size: .5em;
+	}
+
+}
+
+@media (max-width: 230px) {
+	td {
+		height: 40px;
+		width: 40px;
+	}
+
+}
